@@ -1,9 +1,9 @@
 class Gotsrpc < Formula
   desc "CLI utility to generate go and typescript RPC calls easily"
   homepage "https://github.com/foomo/gotsrpc"
-  url "https://github.com/foomo/gotsrpc/releases/download/0.10.0/gotsrpc_0.10.0_darwin_amd64.tar.gz"
-  version "0.10.0"
-  sha256 "dd0cd1323da2d2abade54bd96723be0556f4049497c74d31f9ac10bba88e6a7d"
+  url "https://github.com/foomo/gotsrpc/releases/download/0.10.1/gotsrpc_0.10.1_darwin_amd64.tar.gz"
+  version "0.10.1"
+  sha256 "3889875b51c5274f2b7c9a81c2749e40a1698b40e60ccd5f3e980ba9637c65ad"
 
   def install
     bin.install "gotsrpc"
