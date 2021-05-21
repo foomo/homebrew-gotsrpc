@@ -5,16 +5,16 @@
 class Gotsrpc < Formula
   desc "CLI utility to generate go and typescript RPC calls easily"
   homepage "https://github.com/foomo/gotsrpc"
-  version "2.0.3"
+  version "2.0.4"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/foomo/gotsrpc/releases/download/v2.0.3/gotsrpc_2.0.3_darwin_amd64.tar.gz"
-    sha256 "739be0b8eb1778194ede7cfe743b460d722e293cbe1b01971090a5486c042b30"
+    url "https://github.com/foomo/gotsrpc/releases/download/v2.0.4/gotsrpc_2.0.4_darwin_amd64.tar.gz"
+    sha256 "75964582aaa3470a9061514cd93e60bb66fa17244995af654f88b87cbfab023d"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/foomo/gotsrpc/releases/download/v2.0.3/gotsrpc_2.0.3_linux_amd64.tar.gz"
-    sha256 "9d0bd134908a927061e712e6d6dd0b59345e28e078c371dcfc55383765bdbed2"
+    url "https://github.com/foomo/gotsrpc/releases/download/v2.0.4/gotsrpc_2.0.4_linux_amd64.tar.gz"
+    sha256 "027ac2a448baf33468e161a2dcce070d1daa857a4e4f7c02e8358a1bb2929e56"
   end
 
   def install
