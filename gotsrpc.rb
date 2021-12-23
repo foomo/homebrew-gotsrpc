@@ -5,25 +5,28 @@
 class Gotsrpc < Formula
   desc "CLI utility to generate go and typescript RPC calls easily"
   homepage "https://github.com/foomo/gotsrpc"
-  version "2.1.0"
-  bottle :unneeded
+  version "2.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.1.0/gotsrpc_2.1.0_darwin_amd64.tar.gz"
-      sha256 "a491c1fb28098392618ce204b09299b514d98b64356e6767b74e3795d1884e95"
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.1.1/gotsrpc_2.1.1_darwin_amd64.tar.gz"
+      sha256 "9f6f7ea186b24b44aa5222ce89bf768b2f12933235f3d4f282853f5a7c4996d7"
+
+      def install
+        bin.install "gotsrpc"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.1.0/gotsrpc_2.1.0_linux_amd64.tar.gz"
-      sha256 "2f1f3e5bb2d389e2a41647c697e74de9a47b65ec1e8b326c3d07a95766699640"
-    end
-  end
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.1.1/gotsrpc_2.1.1_linux_amd64.tar.gz"
+      sha256 "2c6f3b255561f66cd3b716378195baf392123898956a63fa8951a24ca14a4589"
 
-  def install
-    bin.install "gotsrpc"
+      def install
+        bin.install "gotsrpc"
+      end
+    end
   end
 
   def caveats; <<~EOS
