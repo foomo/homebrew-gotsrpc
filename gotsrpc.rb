@@ -10,7 +10,7 @@ class Gotsrpc < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/foomo/gotsrpc/releases/download/v2.1.1/gotsrpc_2.1.1_darwin_amd64.tar.gz"
-      sha256 "9f6f7ea186b24b44aa5222ce89bf768b2f12933235f3d4f282853f5a7c4996d7"
+      sha256 "bef02cee98fef9744adda48002829a32f3a0c07dd822ee72ee3942e961a409a3"
 
       def install
         bin.install "gotsrpc"
@@ -21,7 +21,7 @@ class Gotsrpc < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/foomo/gotsrpc/releases/download/v2.1.1/gotsrpc_2.1.1_linux_amd64.tar.gz"
-      sha256 "2c6f3b255561f66cd3b716378195baf392123898956a63fa8951a24ca14a4589"
+      sha256 "faaf055d99edb4a643af916e284b4a8bef8a2a55c18675d8dde5eec8df64708e"
 
       def install
         bin.install "gotsrpc"
