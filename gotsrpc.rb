@@ -5,20 +5,20 @@
 class Gotsrpc < Formula
   desc "CLI utility to generate go and typescript RPC calls easily"
   homepage "https://github.com/foomo/gotsrpc"
-  version "2.3.0"
+  version "2.3.1"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.3.0/gotsrpc_2.3.0_darwin_arm64.tar.gz"
-      sha256 "584b2cd4a333408b4a9663854e429749e69df2205cc3e45921d92f174f14d01e"
+    if Hardware::CPU.intel?
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.3.1/gotsrpc_2.3.1_darwin_amd64.tar.gz"
+      sha256 "130bb0d0a7b996ae43c387c6677c98084b3d9c47737da12e56c8262367b6000a"
 
       def install
         bin.install "gotsrpc"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.3.0/gotsrpc_2.3.0_darwin_amd64.tar.gz"
-      sha256 "3d7ded702ad85ead461ee6546d9f188c7624b40e660ba3ca5104bfe54aba32f0"
+    if Hardware::CPU.arm?
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.3.1/gotsrpc_2.3.1_darwin_arm64.tar.gz"
+      sha256 "275f3b1372492e08d47793d8b118076f5615dad81588e36f0ce915bc9519868e"
 
       def install
         bin.install "gotsrpc"
@@ -27,17 +27,17 @@ class Gotsrpc < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.3.0/gotsrpc_2.3.0_linux_amd64.tar.gz"
-      sha256 "0031e57365b8733651ac354f163961793c940b1241b178da79aa378b92ebbfa1"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.3.1/gotsrpc_2.3.1_linux_arm64.tar.gz"
+      sha256 "7f48f781c0ca755f68e7c810fe68c257b919369c34bf6549bdd72d8aa3f6ab9a"
 
       def install
         bin.install "gotsrpc"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.3.0/gotsrpc_2.3.0_linux_arm64.tar.gz"
-      sha256 "c060bc29edbef7921f02fe2c234cdd72c108c46dd4ef51044239340aa24412a3"
+    if Hardware::CPU.intel?
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.3.1/gotsrpc_2.3.1_linux_amd64.tar.gz"
+      sha256 "5ce988d030ee2c0f33744271158419447e1fba108685267966a93fa9b4d299ea"
 
       def install
         bin.install "gotsrpc"
