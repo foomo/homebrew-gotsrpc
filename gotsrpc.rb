@@ -5,20 +5,20 @@
 class Gotsrpc < Formula
   desc "CLI utility to generate go and typescript RPC calls easily"
   homepage "https://github.com/foomo/gotsrpc"
-  version "2.6.0"
+  version "2.6.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.0/gotsrpc_2.6.0_darwin_amd64.tar.gz"
-      sha256 "472a7f276987397b7ee44bf6622dc0625a0e8a7cc0345227840d1fbd0a5a3ea4"
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.1/gotsrpc_2.6.1_darwin_amd64.tar.gz"
+      sha256 "2bfbe8bddc01114967684a522868be0f4bc98a9ab5f8ca44a995bc235993dc17"
 
       def install
         bin.install "gotsrpc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.0/gotsrpc_2.6.0_darwin_arm64.tar.gz"
-      sha256 "d93daad789d78367a3e313e71c98f612c61dde208717ba3a592beefb6c6bf977"
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.1/gotsrpc_2.6.1_darwin_arm64.tar.gz"
+      sha256 "bf0f2bb406f93ce51cb728035dd6bd0fd11235e279995d3ce4b914a21339fffd"
 
       def install
         bin.install "gotsrpc"
@@ -28,16 +28,16 @@ class Gotsrpc < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.0/gotsrpc_2.6.0_linux_arm64.tar.gz"
-      sha256 "17485fffa4f903951985af3bea8a65184b49ae35ce67b2e9b9a34c63a1a16d95"
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.1/gotsrpc_2.6.1_linux_arm64.tar.gz"
+      sha256 "bcaec89e2463ca92a250d7666b4755cc782530eab4eff471c840e1584852452d"
 
       def install
         bin.install "gotsrpc"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.0/gotsrpc_2.6.0_linux_amd64.tar.gz"
-      sha256 "5469d0f095dd2cb03b2a3b4fd2e3b02a3abc9cd86fc1963aef362e03335da2e7"
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.1/gotsrpc_2.6.1_linux_amd64.tar.gz"
+      sha256 "4b2dda35409af52c644fefb9a79e434d0250c5cb0fce9e1d7768c9e67e8ca5ff"
 
       def install
         bin.install "gotsrpc"
@@ -45,8 +45,9 @@ class Gotsrpc < Formula
     end
   end
 
-  def caveats; <<~EOS
-    gotsrpc gotsrpc.yml
-  EOS
+  def caveats
+    <<~EOS
+      gotsrpc gotsrpc.yml
+    EOS
   end
 end
