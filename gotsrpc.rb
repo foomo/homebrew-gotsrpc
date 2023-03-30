@@ -5,20 +5,20 @@
 class Gotsrpc < Formula
   desc "CLI utility to generate go and typescript RPC calls easily"
   homepage "https://github.com/foomo/gotsrpc"
-  version "2.6.2"
+  version "2.7.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.2/gotsrpc_2.6.2_darwin_arm64.tar.gz"
-      sha256 "de1f2e2d3d2184098dd168f6c70cead1310d640cc9e8d49686ce926b3f2b9021"
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.7.0/gotsrpc_2.7.0_darwin_arm64.tar.gz"
+      sha256 "c1e0725e5ea9d0fe244e3a60191307e1f7cc4c94abf8985d809de84f7e22e5bb"
 
       def install
         bin.install "gotsrpc"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.2/gotsrpc_2.6.2_darwin_amd64.tar.gz"
-      sha256 "49ddd572a3e08da6131c0ef74938a3837664a3ba76ec3dbf62c6d879855952a2"
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.7.0/gotsrpc_2.7.0_darwin_amd64.tar.gz"
+      sha256 "c498120d1d34d774dc5490e6c2afce3d188f23de4dd0480ef8b0574c7c2176b1"
 
       def install
         bin.install "gotsrpc"
@@ -28,16 +28,16 @@ class Gotsrpc < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.2/gotsrpc_2.6.2_linux_amd64.tar.gz"
-      sha256 "327f890d4447b14ae9e4d1819e362ff70462f604bfc0e971bc45ff17df41ef05"
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.7.0/gotsrpc_2.7.0_linux_amd64.tar.gz"
+      sha256 "56eb3d059786443a5fcccffc9eb2991d581e66f2fceb4b5c8196d75bddbb11bc"
 
       def install
         bin.install "gotsrpc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foomo/gotsrpc/releases/download/v2.6.2/gotsrpc_2.6.2_linux_arm64.tar.gz"
-      sha256 "d23e11d7a9e8b55657c8c563fcb7774624319f494a0c20b3d9e75ca878c5ece3"
+      url "https://github.com/foomo/gotsrpc/releases/download/v2.7.0/gotsrpc_2.7.0_linux_arm64.tar.gz"
+      sha256 "02cc131247ad5967d75813a601a82210c290a53c1f08b49c1d3d99d8dd5fa490"
 
       def install
         bin.install "gotsrpc"
